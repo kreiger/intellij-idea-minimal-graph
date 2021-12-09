@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>org.example.intellij-idea-minimal-graph</id>
+    <name>Minimal Graph</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+        This plugin shows how graph rendering broke somehow in IntelliJ IDEA 2021.3.
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.example.GraphPopupPostStartupActivity" />
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
